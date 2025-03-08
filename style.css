@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background: #f38531;
+    border-radius: 10px;
+    height: 10vh;
+}
+
+nav .logo{
+    color: #000;
+    text-transform: uppercase;
+}
+
+nav .logo strong{
+    color: yellow;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+}
+
+nav ul li a{
+    padding: 8px;
+    color: #000;
+    text-transform: capitalize;
+}
+
+nav .log-in ul li .sign{
+    background: orange;
+    border-radius: 10px;
+    color: #fff;
+}
+
+/* nav end */
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* content start */
+
+.container .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    text-transform: capitalize;
+    width: 50%;
+}
+
+.container .content h2{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.container .content .description p{
+    font-size: 20px ;
+}
+
+.container .content .book{
+    display: flex;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, .4);
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container .content .book .information {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    width: 20vw;
+}
+#date , #map{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.book i{
+    font-size: 18px;
+    color: #f96023;
+}
+
+.book button{
+    background: #f96023;
+    padding: 0 20px;
+    border-radius: 20px ;
+    color: #fff;
+    width: 30%;
+    height: 8vh;
+}
+
+/* content end */
+
+/* background start */
+
+.background{
+    width: 50%;
+    height: 85vh;
+    background: url(header-bg.webp) center center/cover no-repeat;
+    border-radius: 50%;
+    position: relative;
+}
+
+.background .girl{
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* background end */
