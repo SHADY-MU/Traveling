@@ -11,7 +11,6 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    background: #f38531;
     border-radius: 10px;
     height: 10vh;
 }
@@ -19,10 +18,12 @@ nav{
 nav .logo{
     color: #000;
     text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 900;
 }
 
 nav .logo strong{
-    color: yellow;
+    color: #f96023;
 }
 
 nav ul{
@@ -40,7 +41,7 @@ nav ul li a{
 }
 
 nav .log-in ul li .sign{
-    background: orange;
+    background: #f96023;
     border-radius: 10px;
     color: #fff;
 }
@@ -53,6 +54,14 @@ nav .log-in ul li .sign{
     align-items: center;
 }
 
+.title b{
+    color: #f96023;
+}
+
+.title h2{
+    font-size: 48px;
+    text-transform: uppercase;
+}
 /* content start */
 
 .container .content{
@@ -65,11 +74,6 @@ nav .log-in ul li .sign{
     width: 50%;
 }
 
-.container .content h2{
-    font-size: 50px;
-    text-transform: uppercase;
-}
-
 .container .content .description p{
     font-size: 20px ;
 }
@@ -78,6 +82,7 @@ nav .log-in ul li .sign{
     display: flex;
     box-shadow: 8px 8px 5px rgba(0, 0, 0, .4);
     justify-content: space-between;
+    align-items: center;
     padding: 10px;
     border-radius: 10px;
 }
@@ -108,6 +113,7 @@ nav .log-in ul li .sign{
     color: #fff;
     width: 30%;
     height: 8vh;
+    cursor: pointer;
 }
 
 /* content end */
