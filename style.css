@@ -165,14 +165,6 @@ nav .log-in ul li .sign{
     left: 0;
 }
 
-footer{
-    width: 100%;
-    font-size: 16px;
-    text-align: center;
-    background: #decccc49;
-}
-
-
 /* background end */
 
 @media screen and (max-width: 768px) {
