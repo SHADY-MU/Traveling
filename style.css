@@ -8,7 +8,7 @@
 
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 5px;
     border-radius: 10px;
@@ -34,10 +34,22 @@ nav ul{
     font-size: 15px;
 }
 
-nav ul li a{
+nav ul li a , a{
     padding: 8px;
     color: #000;
     text-transform: capitalize;
+}
+
+.bar{
+    display: none;
+    font-size: 20px;
+}
+
+.links ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #f96023;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
 }
 
 nav .log-in ul li .sign{
@@ -46,12 +58,22 @@ nav .log-in ul li .sign{
     color: #fff;
 }
 
+.log-in ul li a:hover{
+    color: #f96023;
+}
+
+.log-in .sign:hover{
+    color: #fff;
+    background: #a34722;
+}
+
 /* nav end */
 
 .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    width: 100%;
 }
 
 .title b{
@@ -101,6 +123,10 @@ nav .log-in ul li .sign{
     font-size: 16px;
 }
 
+.book{
+    width: 100%;
+}
+
 .book i{
     font-size: 18px;
     color: #f96023;
@@ -109,11 +135,15 @@ nav .log-in ul li .sign{
 .book button{
     background: #f96023;
     padding: 0 20px;
-    border-radius: 20px ;
+    border-radius: 15px ;
     color: #fff;
-    width: 30%;
+    width: 20%;
     height: 8vh;
     cursor: pointer;
+}
+
+.book button:hover{
+    background: #a34722;
 }
 
 /* content end */
@@ -121,7 +151,7 @@ nav .log-in ul li .sign{
 /* background start */
 
 .background{
-    width: 50%;
+    width: 40%;
     height: 85vh;
     background: url(header-bg.webp) center center/cover no-repeat;
     border-radius: 50%;
@@ -136,3 +166,68 @@ nav .log-in ul li .sign{
 }
 
 /* background end */
+
+@media screen and (max-width: 768px) {
+    nav{
+        background: #f96023;
+        position: relative;
+        padding: 10px 20px;
+    }
+    .logo h1 strong{
+        color: #000;
+    }
+    .links ul{
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 5%;
+        z-index: 10;
+        display: none;
+        background: white;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .bar{
+        display: block;
+        cursor: pointer;
+    }
+    .log-in{
+        display: none;
+    }
+    .container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        text-align: center;
+    }
+    .background{
+        width: 80vw;
+        height: 65vh;
+        margin-top: 20px;
+    }
+    .background .girl{
+        width: 65vw;
+    }
+    .title{
+        margin: 0 auto;
+    }
+    .container .title h2{
+        font-size: 36px;
+        width: 80vw;
+    }
+    .container .content{
+        width: 100%;
+    }
+    .container .content .book{
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .information p{
+        font-size: 15px;
+        padding: 5px;
+    }
+    
+}
