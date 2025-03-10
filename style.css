@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
-    box-sizing: border-box;
     list-style: none;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
@@ -112,7 +111,6 @@ nav .log-in ul li .sign{
 .container .content .book .information {
     display: flex;
     flex-direction: column;
-    width: 200px;
     width: 20vw;
 }
 #date , #map{
@@ -136,6 +134,7 @@ nav .log-in ul li .sign{
     background: #f96023;
     padding: 0 20px;
     border-radius: 15px ;
+    border: none;
     color: #fff;
     width: 20%;
     height: 8vh;
@@ -167,11 +166,11 @@ nav .log-in ul li .sign{
 
 /* background end */
 
+
 @media screen and (max-width: 768px) {
     nav{
         background: #f96023;
         position: relative;
-        padding: 10px 20px;
     }
     .logo h1 strong{
         color: #000;
@@ -201,26 +200,27 @@ nav .log-in ul li .sign{
         align-items: center;
         margin-left: 10px;
         text-align: center;
+        width: 80%;
     }
     .background{
-        width: 80vw;
+        width: 100%;
         height: 65vh;
         margin-top: 20px;
     }
     .background .girl{
-        width: 65vw;
+        width: 90%;
     }
     .title{
         margin: 0 auto;
     }
     .container .title h2{
         font-size: 36px;
-        width: 80vw;
     }
     .container .content{
         width: 100%;
     }
     .container .content .book{
+        width: 90vw;
         justify-content: space-between;
         margin: auto;
     }
@@ -229,5 +229,35 @@ nav .log-in ul li .sign{
         font-size: 15px;
         padding: 5px;
     }
-    
+}
+
+@media screen and (max-width: 600px) and (min-width: 300px ) {
+    .container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+    }
+    .background{
+        width: 100%;
+        height: 40vh;
+        margin: 30px auto;
+    }
+    .book{
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+    }
+    .book label{
+        font-size: 20px ;
+        color: #a34722;
+    }
+    .information{
+        width: 100%;
+        justify-content: start;
+        align-items: center;
+    }
+    .book button{
+        width: 100%;
+    }
 }
