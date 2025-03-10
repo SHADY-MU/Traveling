@@ -167,7 +167,7 @@ nav .log-in ul li .sign{
 /* background end */
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     nav{
         background: #f96023;
         position: relative;
